@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1976d2;
+}
+
+#matrixDisplay {
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  gap: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#matrixDisplay div {
+  padding: 10px;
+  border: 1px solid #000;
+  background: #e0f7fa;
+  border-radius: 4px;
+}
+
+#steps {
+  background: #f9f9f9;
+  padding: 10px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  border-left: 4px solid #2196f3;
+}
+
+#cipherOutput {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+canvas {
+  margin: 10px 0;
+  border: 1px solid #000;
+  display: block;
+  max-width: 100%;
+}

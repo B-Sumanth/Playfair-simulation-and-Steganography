@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Playfair Cipher & Image Encryptor</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Playfair Cipher Simulator</h1>
+
+    <label>Enter Key:</label>
+    <input type="text" id="keyInput" placeholder="e.g. MONARCHY" />
+
+    <label>Enter Plaintext:</label>
+    <input type="text" id="plainInput" placeholder="e.g. INSTRUMENTS" />
+
+    <button onclick="startEncryption()">Encrypt</button>
+
+    <h3>Matrix:</h3>
+    <div id="matrixDisplay"></div>
+
+    <h3>Encryption Steps:</h3>
+    <div id="steps"></div>
+
+    <h3>Encrypted Text:</h3>
+    <div id="cipherOutput"></div>
+
+    <hr />
+
+    <h2>🖼️ Image Encryption & Decryption</h2>
+
+    <label>Upload Image:</label>
+    <input type="file" accept="image/*" onchange="handleImage(this)" />
+
+    <label>Enter Key for Image Encryption:</label>
+    <input type="text" id="imageKey" placeholder="e.g. secret123" />
+
+    <button onclick="encryptImage()">Encrypt Image</button>
+    <button onclick="decryptImage()">Decrypt Image</button>
+
+    <h4>Original Image</h4>
+    <canvas id="originalCanvas" width="300"></canvas>
+
+    <h4>Encrypted / Decrypted Image</h4>
+    <canvas id="encryptedCanvas" width="300"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
